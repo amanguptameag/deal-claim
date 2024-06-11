@@ -1,4 +1,5 @@
 # Limited Time Deals
+# https://docs.google.com/document/u/0/d/1B-nD1Kma0DSPMgqusEIj6ZjGz96q8LwE8v1jKC9pcRk/mobilebasic
 
 # A limited-time deal implies that a seller will put up an item on sale for a limited time period, say, 2 hours, 
 # and will keep a maximum limit on the number of items that would be sold as part of that deal.
@@ -33,11 +34,11 @@ user_id_2 = 2
 deal_1 = app.add_deal(1, 100, 2, datetime.now() + timedelta(seconds=1))
 deal_2 = app.add_deal(2, 200, 3, datetime.now() + timedelta(minutes=1))
 
-# time.sleep(2)
+time.sleep(2)
 
-# claim_1 = app.claim_deal(user_id_1, deal_1.id)
-# claim_2 = app.claim_deal(user_id_1, deal_2.id)
+claim_1 = app.claim_deal(user_id_1, deal_1.id)
+claim_2 = app.claim_deal(user_id_1, deal_2.id)
 
-# deal_2 = app.update_deal(deal_2.id, 3, datetime.now() + timedelta(minutes=2))
+deal_2 = app.update_deal(deal_2.id, 3, datetime.now() + timedelta(minutes=2))
 
 # pdb.set_trace()
